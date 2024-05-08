@@ -1,0 +1,5 @@
+<div class="container">
+  <h1>Madhur's Jokes</h1>
+  <button (click)="getRandomJoke()">Get Random Joke</button>
+  <div *ngIf="joke" class="joke">{{ joke }}</div>
+</div>
