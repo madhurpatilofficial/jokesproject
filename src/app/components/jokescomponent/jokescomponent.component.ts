@@ -16,11 +16,9 @@ export class JokescomponentComponent {
     this.jokesservice.getRandomJoke().subscribe(
       (data: any) => {
         this.joke = data.value;
-        console.log(this.joke);
-        
       },
       (error: any) => {
-        console.log('Error fetching Joke:', error);
+        console.log('Error fetching Chuck Norris joke:', error);
       }
     );
   }

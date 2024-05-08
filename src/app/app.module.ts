@@ -7,6 +7,7 @@ import { JokescomponentComponent } from './components/jokescomponent/jokescompon
 import { JokesserviceService } from './services/jokesservice.service';
 
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { HttpClientModule } from '@angular/common/http';
   imports: [
     BrowserModule,
     HttpClientModule,
+    FormsModule
   ],
   providers: [
     provideClientHydration(),
